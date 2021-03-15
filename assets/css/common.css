@@ -1,0 +1,127 @@
+@font-face {
+  font-family: 'GenJyuu';
+  src: url('../font/GenJyuuGothic-P-Medium.ttf');
+}
+
+html {
+  font-family: 'GenJyuu';
+  max-width: 37.5rem;
+  font-size: 20px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  height: 5.75rem;
+  background: #fff;
+  padding: 0 1.05rem;
+  box-sizing: border-box;
+  border-bottom: 0.05rem solid #c2c1c1;
+  box-sizing: border-box;
+  box-shadow: 0rem 0.4rem 0.55rem -0.18rem #c2c1c1
+}
+
+header .header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+header .header .logo {
+  width: 20%;
+  height: 100%;
+  line-height: 5.75rem;
+  font-size: 1.8rem;
+}
+
+header .header .logo a {
+  color: #99163b;
+}
+
+header .header .search {
+  width: 25rem;
+  height: 100%;
+  padding: 1.75rem 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+header .header .search i.fa-search {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15%;
+  color: #a0a0a0;
+  font-size: 1rem;
+}
+
+header .header .search input[type='search'] {
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  color: #a0a0a0;
+  box-sizing: border-box;
+  border: 0;
+  background: #eaeaea;
+  padding: 0 10% 0 20%;
+}
+
+header .navbar {
+  overflow: hidden;
+  width: 100%;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  box-sizing: border-box;
+}
+
+header .navbar ul {
+  width: 50rem;
+}
+
+header .navbar ul li {
+  width: 3.9rem;
+  float: left;
+}
+
+header .navbar ul li+li {
+  margin: 0 1.5rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 540px) {
+  html {
+    font-size: 14.4px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  html {
+    font-size: 11.04px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  html {
+    font-size: 9.6px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 8.53333333333px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  html {
+    font-size: 7.46666666667px;
+  }
+}
