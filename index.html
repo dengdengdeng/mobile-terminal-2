@@ -21,17 +21,52 @@
         <input type="search" placeholder="夏日新品上市">
       </div>
     </div>
-    <div class="navbar">
+    <div id="navbar" class="navbar">
       <ul>
-        <li>推荐</li>
-        <li>居家</li>
-        <li>美肤</li>
-        <li>穿搭</li>
-        <li>杂货</li>
-        <li>文具</li>
+        <li data-index="0" class="active">推荐</li>
+        <li data-index="1">居家</li>
+        <li data-index="2">美肤</li>
+        <li data-index="3">穿搭</li>
+        <li data-index="4">杂货</li>
+        <li data-index="99">文具</li>
       </ul>
     </div>
   </header>
+
+  <section class="container">
+    <div class="content" style="margin-left: 0;">
+      <div class="content-item recommend">
+        <div class="banner">
+          <a href="#">
+            <img src="assets/images/index1_banner.jpg" alt="">
+          </a>
+        </div>
+        <div class="promotion">
+          <p class="title">活动一览<a href="#">查看更多<i class="fa fa-chevron-right" aria-hidden="true"></i></a></p>
+        </div>
+      </div>
+
+      <div class="content-item">居家</div>
+      <div class="content-item">美肤</div>
+      <div class="content-item">穿搭</div>
+      <div class="content-item">杂货</div>
+    </div>
+  </section>
+
+
+  <script src="assets/js/jquery-3.4.1.min.js"></script>
+  <script>
+    $('#navbar ul li').click(function () {
+      let index = $(this).attr('data-index');
+      // console.log(index);
+      if (index != 99) {
+        let ml = '-' + (index * 100) + '%';
+        $('.container .content').css('margin-left', ml);
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+      }
+    })
+  </script>
 </body>
 
 </html>

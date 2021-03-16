@@ -12,21 +12,22 @@ html {
 
 header {
   width: 100%;
-  height: 5.75rem;
+  height: 10.25rem;
   background: #fff;
-  padding: 0 1.05rem;
   box-sizing: border-box;
   border-bottom: 0.05rem solid #c2c1c1;
   box-sizing: border-box;
-  box-shadow: 0rem 0.4rem 0.55rem -0.18rem #c2c1c1
 }
 
 header .header {
   width: 100%;
-  height: 100%;
+  height: 5.75rem;
+  padding: 0 1.05rem;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
+  box-shadow: 0rem 0.4rem 0.55rem -0.18rem #c2c1c1;
+  box-sizing: border-box;
 }
 
 header .header .logo {
@@ -72,8 +73,8 @@ header .navbar {
   overflow: hidden;
   width: 100%;
   height: 4.5rem;
-  line-height: 4.5rem;
   box-sizing: border-box;
+  padding: 0 1.05rem;
 }
 
 header .navbar ul {
@@ -81,13 +82,20 @@ header .navbar ul {
 }
 
 header .navbar ul li {
+  text-align: center;
   width: 3.9rem;
+  height: 100%;
   float: left;
+  padding: 1.41rem 0;
+  box-sizing: border-box;
+}
+
+header .navbar ul li.active {
+  border-bottom: 0.2rem solid #910029;
 }
 
 header .navbar ul li+li {
   margin: 0 1.5rem;
-  text-align: center;
 }
 
 @media screen and (max-width: 540px) {
